@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>webix</artifactId>
-    <version>4.0.8-SNAPSHOT</version>
+    <version>4.0.9-SNAPSHOT</version>
     <name>Webix</name>
     <description>WebJar for Webix</description>
     <url>http://webjars.org</url>
