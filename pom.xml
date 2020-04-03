@@ -11,15 +11,15 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>webix</artifactId>
-    <version>5.2.1-SNAPSHOT</version>
+    <version>7.0.0-SNAPSHOT</version>
     <name>Webix</name>
     <description>WebJar for Webix</description>
     <url>http://webjars.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>5.2.0</upstream.version>
-        <upstream.url>http://github.com/webix-hub/tracker/archive/${upstream.version}.zip</upstream.url>
+        <upstream.version>7.0.0</upstream.version>
+        <upstream.url>http://github.com/webix-hub/webix/archive/${upstream.version}.zip</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>
             {
@@ -73,7 +73,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}/unzip" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/unzip/tracker-${upstream.version}/codebase" />
+                                    <fileset dir="${project.build.directory}/unzip/webix-${upstream.version}/codebase" />
                                 </move>
                             </target>
                         </configuration>
